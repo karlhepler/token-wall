@@ -48,7 +48,7 @@ class TokenWall
         }
 
         // Disallow
-        return response('Access Denied');
+        return response(config('token-wall.message'), config('token-wall.status'));
     }
 
     ///////////////////////
